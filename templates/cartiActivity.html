@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Carti Activity</title>
+<style>
+    body{
+        background-image: url(/static/tipuriCarti/bg.png);
+    }
+    #tipuriCarti{
+        display: flex;
+        flex-direction: row;
+    }
+    #imgCarte{
+        border: none;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<a href="/activity/carti" class="btn btn-warning mt-5">BACK</a>
+<div id="tipuriCarti" class="container p-5">
+    <div class="row">
+        <div class="col">
+            <img src="/static/tipuriCarti/buton3.png" id="img3" width="300px" height="400px" class="p-5" alt="carte de 3">
+        </div>
+        <div class="col">
+            <img src="/static/tipuriCarti/buton4.png" id="img4" width="300px" height="400px" class="p-5" alt="carte de 4">
+        </div>
+        <div class="col">
+            <img src="/static/tipuriCarti/buton5.png" id="img5" width="300px" height="400px" class="p-5" alt="carte de 5">
+        </div>
+    </div>
+    <div class="row">
+        <div id="divCarteAfisat" class="col">
+        </div>
+    </div>
+</div>
+<script src="/static/js/cartiActivity.js"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+
+<title>Home</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{ url_for('static',filename='ActivityIcon.jpg') }}" alt="Activity">
+        <div class="card-body">
+            <h5 class="card-title">Activity</h5>
+            <a href="/activity" class="btn btn-primary">Mergi la joc</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
